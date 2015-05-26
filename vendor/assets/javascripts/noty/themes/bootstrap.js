@@ -14,6 +14,10 @@ $.noty.themes.bootstrapTheme = {
         }
     },
     style: function() {
+        this.$bar.css({
+            overflow  : 'hidden',
+            background: "#fff"
+        });
 
         var containerSelector = this.options.layout.container.selector;
         $(containerSelector).addClass('list-group');
